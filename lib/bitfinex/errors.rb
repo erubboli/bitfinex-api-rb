@@ -5,6 +5,7 @@ module Bitfinex
   class ParamsError < ClientError; end
   class InvalidAuthKeyError < ClientError; end
   class BlockMissingError < ParamsError; end
+  class UnknownVersionException < ParamsError; end
   class ServerError < Exception; end # Error reported back by Binfinex server
   class BadRequestError < ServerError; end
   class NotFoundError < ServerError; end

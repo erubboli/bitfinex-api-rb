@@ -1,4 +1,4 @@
-module Bitfinex
+module Bitfinex::V1
   module DepositClient
     # Return your deposit address to make a new deposit.
     #

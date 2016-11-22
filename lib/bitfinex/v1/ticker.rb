@@ -1,4 +1,4 @@
-module Bitfinex
+module Bitfinex::V1
   module TickerClient
 
     # Gives innermost bid and asks and information on the most recent trade, as well as high, low and volume of the last 24 hours.
@@ -14,7 +14,7 @@ module Bitfinex
     # Call the specified block passing tickers, it uses websocket
     #
     # @param pair [string]
-    # @param block [Block] The code to be executed when a new ticker is sent by the server 
+    # @param block [Block] The code to be executed when a new ticker is sent by the server
     # @example:
     #   client.listen_ticker do |tick|
     #     puts tick.inspect
